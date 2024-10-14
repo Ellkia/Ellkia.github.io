@@ -1,38 +1,75 @@
+/* Style général */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-image: url('Photos/Photo4.jpeg'); /* Chemin vers ton image de fond */
+    background-size: cover;         /* L'image couvre tout l'écran */
+    background-repeat: no-repeat;   /* Pas de répétition de l'image */
+    background-attachment: fixed;   /* L'image de fond reste fixe lors du défilement */
+    background-position: center;    /* L'image est centrée */
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Rouge avec une légère transparence */
+    color: #d64045;  /* Rouge japonais pour les titres */
     text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-main {
     padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+header h1 {
+    font-size: 2.5rem;
+    font-family: 'Noto Serif JP', serif;
+    margin: 0;
+}
+
+/* Main */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);  /* Fond blanc avec transparence */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Articles */
+article {
+    margin-bottom: 40px;
+}
+
+article h2 {
+    font-family: 'Noto Serif JP', serif;
+    color: #d64045;  /* Rouge japonais pour les titres */
+    font-size: 1.8rem;
+}
+
+article p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border: 3px solid #d64045;  /* Bordure rouge autour des photos */
+    border-radius: 8px;          /* Coins arrondis pour les photos */
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
     width: 100%;
+    bottom: 0;
 }
